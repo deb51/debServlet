@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <welcome-file-list>
+		<welcome-file>Testing.html</welcome-file>
+	</welcome-file-list>
+	<listener>
+		<listener-class>com.deb1.DBListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>ss</servlet-name>
+		<servlet-class>com.deb1.SelectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ss</servlet-name>
+		<url-pattern>/ss</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>is</servlet-name>
+		<servlet-class>com.deb1.InsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>is</servlet-name>
+		<url-pattern>/is</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>us</servlet-name>
+		<servlet-class>com.deb1.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>us</servlet-name>
+		<url-pattern>/us</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ds</servlet-name>
+		<servlet-class>com.deb1.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ds</servlet-name>
+		<url-pattern>/ds</url-pattern>
+	</servlet-mapping>
+
+</web-app>
