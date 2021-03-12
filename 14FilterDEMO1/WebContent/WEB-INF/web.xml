@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<filter>
+		<filter-name>fd1</filter-name>
+		<filter-class>com.deb1.FilterDemo1</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>fd1</filter-name>
+		<url-pattern>/fd1</url-pattern>
+	</filter-mapping>
+
+	<!-- ===============FilterDemo2================= -->
+
+
+	<filter>
+		<filter-name>fd2</filter-name>
+		<filter-class>com.deb2.FilterDemo2</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>fd2</filter-name>
+		<url-pattern>/fd2</url-pattern>
+	</filter-mapping>
+
+
+	<!-- ===============FilterCOnfigDemo3================= -->
+
+	<filter>
+		<filter-name>fc3</filter-name>
+		<filter-class>com.deb3.FilterConfigDemo1</filter-class>
+
+		<init-param>
+			<param-name>fno</param-name>
+			<param-value>10</param-value>
+
+		</init-param>
+		<init-param>
+			<param-name>sno</param-name>
+			<param-value>110</param-value>
+
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>fc3</filter-name>
+		<url-pattern>/fc3</url-pattern>
+	</filter-mapping>
+</web-app>
